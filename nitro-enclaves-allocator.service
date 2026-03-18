@@ -5,9 +5,6 @@ After=sysinit.target
 
 [Service]
 Type=oneshot
-StandardOutput=journal
-StandardError=journal
-SyslogIdentifier=nitro-enclaves-allocator
 ExecStart=/usr/libexec/nitro-enclaves-allocator
 RemainAfterExit=yes
 
